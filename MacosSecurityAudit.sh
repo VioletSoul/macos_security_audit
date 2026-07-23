@@ -174,10 +174,10 @@ confidence_label(){
 
 if [ "$JSON_ONLY" -eq 0 ]; then
   clear 2>/dev/null || true
-  echo "╔══════════════════════════════════════════════════════╗"
+  echo "╔═════════════════════════════════════════════════════╗"
   echo "║       macOS NIGHTWATCH AUDIT SNAPSHOT 3.2.2         ║"
   echo "║        HEURISTIC WORKSTATION POSTURE ANALYZER       ║"
-  echo "╚══════════════════════════════════════════════════════╝"
+  echo "╚═════════════════════════════════════════════════════╝"
   echo
   echo "INITIALIZING AUDIT"
   for x in Hardware Kernel Privacy Network Persistence; do
@@ -896,16 +896,16 @@ bar "$ATTACK"  "ATTACK SURFACE"
 
 section "POSTURE ASSESSMENT"
 if [ "$JSON_ONLY" -eq 0 ]; then
-  echo "╔══════════════════════════════════════╗"
-  echo "║    NIGHTWATCH ASSESSMENT 3.2.2       ║"
-  echo "╠══════════════════════════════════════╣"
+  echo "╔════════════════════════════════════╗"
+  echo "║    NIGHTWATCH ASSESSMENT 3.2.2     ║"
+  echo "╠════════════════════════════════════╣"
   printf "║ BASE        %-22s ║\n" "$BASE_INDEX / 100"
   printf "║ PENALTY     %-22s ║\n" "-$OP_PENALTY"
   printf "║ INDEX       %-22s ║\n" "$POSTURE_INDEX / 100"
   printf "║ POSTURE     %-22s ║\n" "$POSTURE_LEVEL"
   printf "║ SEVERITY    %-22s ║\n" "$SEVERITY_LEVEL"
   printf "║ CONFIDENCE  %-22s ║\n" "$CONFIDENCE_SCORE / 100"
-  echo "╚══════════════════════════════════════╝"
+  echo "╚════════════════════════════════════╝"
 fi
 
 section "REVIEW ITEMS"
@@ -1132,7 +1132,7 @@ info "Baseline details snapshot  : $DIR/current_baseline_details.txt"
 
 if [ "$JSON_ONLY" -eq 0 ]; then
   echo
-  echo "════════════════════════════════════════════"
+  echo "════════════════════════════════════════"
   echo " NIGHTWATCH AUDIT COMPLETE"
-  echo "════════════════════════════════════════════"
+  echo "════════════════════════════════════════"
 fi
